@@ -1,7 +1,6 @@
-package com.randy.pattern.proxy;
+package com.randy.pattern.proxy.dynamic;
 
 import android.util.Log;
-
 /**
  * @author chenming
  * @data 2018/11/12 11:08
@@ -10,10 +9,10 @@ import android.util.Log;
  * @email chenming@evergande.com
  */
 
-public class RealImage implements Image {
+public class RealImage1 implements Image1 {
     private String fileName;
 
-    public RealImage(String fileName) {
+    public RealImage1(String fileName) {
         this.fileName = fileName;
         loadFromDisk(fileName);
     }

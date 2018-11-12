@@ -1,5 +1,9 @@
 package com.randy.pattern.proxy;
 
+import com.randy.pattern.proxy.dynamic.Image1;
+import com.randy.pattern.proxy.dynamic.ProxyHandler;
+import com.randy.pattern.proxy.dynamic.RealImage1;
+
 /**
  * @author chenming
  * @data 2018/11/12 11:11
@@ -41,5 +45,9 @@ public class ProxyDemo {
         image.display();
         // 图像不需要从磁盘加载
         image.display();
+
+        //动态代理
+        Image1 image1 = (Image1)new ProxyHandler().newProxyInstance(new RealImage1("randychen.jpg"));
+        image1.display();
     }
 }

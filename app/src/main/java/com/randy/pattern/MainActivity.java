@@ -1,5 +1,7 @@
 package com.randy.pattern;
 
+import android.app.ActivityManager;
+import android.app.NotificationManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -8,6 +10,8 @@ import com.randy.pattern.observer.ObserverDemo;
 import com.randy.pattern.proxy.ProxyDemo;
 import com.randy.pattern.singleton.SingletonDemo;
 import com.randy.pattern.strategy.StrategyDemo;
+
+import java.lang.reflect.Proxy;
 
 public class MainActivity extends AppCompatActivity {
 
