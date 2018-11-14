@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.randy.pattern.builder.BuilderDemo;
+import com.randy.pattern.chain.ChainPatternDemo;
 import com.randy.pattern.observer.ObserverDemo;
 import com.randy.pattern.proxy.ProxyDemo;
 import com.randy.pattern.singleton.SingletonDemo;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
          2）代理模式     ok
          3）策略模式     ok
          4）构建者模式    ok
-         5）责任链模式
+         5）责任链模式    ok
          6）单例模式     ok
          7）观察者模式    ok
          */
@@ -34,5 +35,6 @@ public class MainActivity extends AppCompatActivity {
         new ProxyDemo().testProxyDemo();
         new BuilderDemo().testBuilder();
         new StrategyDemo().testStrategy();
+        new ChainPatternDemo().testChainPattern();
     }
 }
